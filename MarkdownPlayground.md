@@ -1,12 +1,13 @@
 # Markdown Playground
 
 Use this file to add example markdown elements you learned about by reading the markdown resources below. You need to add at least 3 different markdown elements you learned about, and a mermaid class diagram (of your choice does not have to follow the assignment. However, if you did use mermaid for the assignment, you can just copy that here).
-    Bold: To bold text, add two asterisks or underscores before and after a word or phrase.
-        E.g. **I love you.**
-    Heading: To create a heading, add one to six # symbols before your heading text.
-        E.g. # Big Heading!
-    Strikethrough:  To strikethrough a text, add ~~ before and after a word or phrase.
-        E.g. ~~This is a mistake~~
+    
+1. Bold: To bold text, add two asterisks or underscores before and after a word or phrase.
+    * E.g. **I love you.**
+2. Underline: To create a underline, add <sup> before the word or phrase and </sup> after the word or phrase.
+    * E.g. I love <sup>you</sup>.
+3. Strikethrough:  To strikethrough a text, add ~~ before and after a word or phrase.
+    * E.g. ~~This is a mistake~~
 
 Mermaid is a markdown language that allows you to create diagrams. You can find more information about mermaid in the resources below. It has become popular enough that github has included it as an option in their markdown.  For built in markdown readers, such as the one built into IntelliJ or VSCode, you may need to install a plugin to render the mermaid diagrams. 
 
@@ -27,6 +28,7 @@ Mermaid is a markdown language that allows you to create diagrams. You can find 
 
 <!-- start your playground code under this dashed line -->
 ----
+```mermaid
 ---
 title: Aloha World UML
 ---
@@ -69,3 +71,4 @@ classDiagram
         + checkRunAgain() boolean
         + printGreeting(greeting: String) void
     }
+```
