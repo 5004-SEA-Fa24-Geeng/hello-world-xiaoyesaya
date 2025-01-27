@@ -35,7 +35,7 @@ public class Greeting {
      * @param localityName  the name of the locality
      * @param greeting      the ASCII greeting
      */
-    public Greeting(int localityID, String localityName, String greeting){
+    public Greeting(int localityID, String localityName, String greeting) {
         this(localityID, localityName, greeting, greeting, "%s, %%s!");
     }
 
@@ -52,7 +52,7 @@ public class Greeting {
                     String localityName,
                     String asciiGreeting,
                     String unicodeGreeting,
-                    String formatStr){
+                    String formatStr) {
         this.localityID = localityID;
         this.localityName = localityName;
         this.asciiGreeting = asciiGreeting;
@@ -113,12 +113,11 @@ public class Greeting {
      * @param asciiOnly - if true, only ascii characters will be used
      * @return the format string with the greeting inserted into the format
      */
-    public String getFormatStr(boolean asciiOnly){
+    public String getFormatStr(boolean asciiOnly) {
         String greeting;
-        if(asciiOnly){
-            greeting = asciiGreeting;
-        }
-        else{
+        if (asciiOnly) {
+            greeting = asciiGreeting;}
+        else {
             greeting = unicodeGreeting;
         }
         return String.format(formatStr, greeting);
@@ -132,7 +131,7 @@ public class Greeting {
      * @return the full greeting details as a string
      */
     @Override
-    public String toString(){
+    public String toString() {
         return String.format(
                 "{localityID:%d, localityName:\"%s\", asciiGreeting:\"%s\", unicodeGreeting:\"%s\"}",
                 localityID, localityName, asciiGreeting, unicodeGreeting
