@@ -101,11 +101,12 @@ These questions require deeper thinking of the topic. We don't expect 100% corre
 
 1. Why would we want to keep interaction with the client contained to ConsoleView?
 
-   This helps create a program with classes each has its distinct responsibility and functionality. When testing function whether the program is getting the client name or location correctly, we only need to test it in ConsoleViewtest, which makes it more straightforward and clearer.
+   This helps create a program with classes each has its distinct responsibility and functionality. When testing function whether the program is getting the client name or location correctly, we only need to test it in ConsoleViewTest without worrying about the internal logic of other classes, which makes it more straightforward and clearer.
 
 2. Right now, the application isn't very dynamic in that it can be difficult to add new languages and greetings without modifying the code every time. Just thinking programmatically,  how could you make the application more dynamic? You are free to reference Geeting.java and how that could be used in your design.
 
-   Inside the greeting class, The greeter class can hold a greeting object instead of typing every language and location inside greet method.
+   We can centralize all the information about languages and their related greeting in a static list within the Greeting class. In addition, create a method to return all the greetings (etc. getAllGreetings()), which will allow other classes to get the greetings. In this way, greeter class will not need the hardcoded localityList. ConsoleView will now get the list of greetings dynamically from the Greeting class as well.
+   Additionally, we can create a method called addGreeting() to dynamically add new Greeting objects to the list of greetings in greeting classes.
 
 
 > [!IMPORTANT]
