@@ -11,34 +11,34 @@ link an image in markdown. You may also use [mermaid] class diagrams if you pref
 title: Aloha World UML
 ---
 classDiagram
-direction LR
-AlohaWorld --> Greeter
-AlohaWorld --> ConsoleView : uses
-ConsoleView --> Greeter : uses
-class AlohaWorld {
-- AlohaWorld
-+ main(args: String[]) void
-}
-class Greeter {
-- name: String
-- locality: int
-- localityList: List~String~
-- HAWAII: int
-- CHINA: int
-- ITALY: int
-- DEFAULT_LOCALITY: int
-- getLocalityString: String
-+ Greeter(name: String)
-+ Greeter(name: String, locality: int)
-+ getName() String
-+ getLocality() int
-+ setLocality(locality: int) void
-+ greet(): String
-+ greet(asciiOnly: boolean): String
-+ hashcode() int
-+ equals(obj: Object) boolean
-+ toString() String
-+ getLocalityList() List~String~
+    direction LR
+    AlohaWorld --> Greeter
+    AlohaWorld --> ConsoleView : uses
+    ConsoleView --> Greeter : uses
+    class AlohaWorld {
+        - AlohaWorld
+        + main(args: String[]) void
+    }
+    class Greeter {
+        - name: String
+        - locality: int
+        - localityList: List~String~
+        - HAWAII: int
+        - CHINA: int
+        - ITALY: int
+        - DEFAULT_LOCALITY: int
+        - getLocalityString: String
+        + Greeter(name: String)
+        + Greeter(name: String, locality: int)
+        + getName() String
+        + getLocality() int
+        + setLocality(locality: int) void
+        + greet(): String
+        + greet(asciiOnly: boolean): String
+        + hashcode() int
+        + equals(obj: Object) boolean
+        + toString() String
+        + getLocalityList() List~String~
 
     }
     class ConsoleView {
@@ -51,7 +51,7 @@ class Greeter {
         + printGreeting(greeting: String) void
         
     }
-
+```
 
 ### Program Flow
 Write a short paragraph detailing the flow of the program in your own words. This is to help you understand / trace the code (and give you practice of something called a code walk that will be required in this course).
