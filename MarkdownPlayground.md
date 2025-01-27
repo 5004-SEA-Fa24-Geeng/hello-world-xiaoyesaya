@@ -4,8 +4,8 @@ Use this file to add example markdown elements you learned about by reading the 
     
 1. Bold: To bold text, add two asterisks or underscores before and after a word or phrase.
     * E.g. **I love you.**
-2. Underline: To create a underline, add <sup> before the word or phrase and </sup> after the word or phrase.
-    * E.g. I love <sup>you</sup>.
+2. Underline: To create a underline, add <ins> </ins> before and after the word or phrase.
+    * E.g. I love <ins>you</ins>.
 3. Strikethrough:  To strikethrough a text, add ~~ before and after a word or phrase.
     * E.g. ~~This is a mistake~~
 
