@@ -1,6 +1,6 @@
-**Name:**
+**Name:** Xinqi Cao
 
-**Github Account name:**
+**Github Account name:** xiaoyesaya
 
 **Link to Assignment on Github:** (copy and paste the link to your assignment repo here)
 
