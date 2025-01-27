@@ -56,6 +56,7 @@ classDiagram
 ### Program Flow
 Write a short paragraph detailing the flow of the program in your own words. This is to help you understand / trace the code (and give you practice of something called a code walk that will be required in this course).
 
+   The program starts in main() in AlohaWorld which then asks the client for their name and location with ConsoleView.getName() and ConsoleView.getLocality(). The Greeter object is created using the name and locality that are provided. The Greeter.greet() method generates a greeting based on locality. The ConsoleView.printGreeting() method prints the greeting to the client. The ConsoleView.checkRunAgain() method asks the user if they want to be greeted again. If client selects "yes", the program will get the input from user again using ConsoleView.getLocality. If the client selects "no", the program will end.
 
 ## Assignment Questions
 
