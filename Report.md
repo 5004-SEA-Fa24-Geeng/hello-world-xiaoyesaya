@@ -72,7 +72,7 @@ Write a short paragraph detailing the flow of the program in your own words. Thi
     * (example) The `final` keyword when used on a class prevents the class from being subclassed. This means that the class cannot be extended by another class. This is useful when you want to prevent a class from being modified or extended[^1] . It is often the standard to do this when a class only contains static methods such as driver or utility classes. Math in Java is an example of a final class[^2] .
     * The `static final` creates a variable that cannot be changed later in the code. It is helpful which allows reusing the variable and enhances the readability of the code. It also helps deliver better performance because its values are embedded during compilation rather than being retrieved during runtime [^3].
     * The `switch` is a statement by evaluating the expression and comparing expression with each case inside the switch to find a match. If there is a match, the code inside the case block will be executed [^4]. 
-    * `instanceof`is a useful keyword to check whether an object belongs to a specific class and will return True or False [^5].
+    * `instanceof` is a useful keyword to check whether an object belongs to a specific class and will return True or False [^5].
 
 3. What does `main` do in Java? 
 
@@ -104,6 +104,7 @@ These questions require deeper thinking of the topic. We don't expect 100% corre
    This helps create a program with classes each has its distinct responsibility and functionality. When testing function whether the program is getting the client name or location correctly, we only need to test it in ConsoleViewtest, which makes it more straightforward and clearer.
 
 2. Right now, the application isn't very dynamic in that it can be difficult to add new languages and greetings without modifying the code every time. Just thinking programmatically,  how could you make the application more dynamic? You are free to reference Geeting.java and how that could be used in your design.
+
    The greeter class can hold a greeting object instead of typing every language and location inside greet method.
 
 
