@@ -117,8 +117,7 @@ public class Greeting {
         String greeting;
         if (asciiOnly) {
             greeting = asciiGreeting;
-        }
-        else {
+        } else {
             greeting = unicodeGreeting;
         }
         return String.format(formatStr, greeting);
